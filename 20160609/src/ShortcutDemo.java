@@ -14,11 +14,7 @@ public class ShortcutDemo {
      * Find Usages: Alt+F7
      */
     public void getCoffee() {
-//        Object person = "Dereck";
-//        if (enoughMoney(person)) {
-//            findBankCard();
-//            walkTo(machine);
-//        }
+
     }
 
 
