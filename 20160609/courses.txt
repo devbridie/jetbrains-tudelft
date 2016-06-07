@@ -1,0 +1,13 @@
+TI1106M Calculus 5
+TI1116 Mentorship 0
+TI1206 Object-oriented programming 5
+TI1206M Linear Algebra 5
+TI1216 OOP Project 5
+TI1306 Reasoning and Logic 5
+TI1316 Algorithms and Data Structures 5
+TI1406 Computer Organisation 5
+TI1506 Web and Database Technology 5
+TI1606 Project Multi-Agent Systems 5
+TI1706 Software Quality and Testing 5
+TI1806 Computer Graphics 5
+TI1906 Logic Based AI 5
