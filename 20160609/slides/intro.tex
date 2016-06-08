@@ -1,6 +1,19 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{pgfpages}
+\usepackage{hyperref}
+
+
+\usepackage{eso-pic}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.75\paperwidth},\LenToUnit{0.1\paperheight}){#1}}}
+\AddToShipoutPictureFG{
+  \AtPagemyUpperLeft{{\includegraphics[width=2.5cm,keepaspectratio]{jetbrains_250x250}}}
+}%
+
 
 \title{Being a productive developer with IntelliJ IDEA}
 \author{Dereck Bridi\'e}
@@ -29,8 +42,6 @@
 \begin{itemize}
     \item IntelliJ users?
     \item Eclipse users?
-    \pause
-    \item Computer Science students?
 \end{itemize}
 \end{frame}
 
@@ -55,6 +66,16 @@
 
 \begin{frame}{Ending}
 \section{Ending}
+\begin{itemize}
+    \item Next session in a few weeks
+    \item Topic suggestions welcomed!
+    \item Find this project on Github: \url{https://github.com/devbridie/jetbrains-tudelft}
+    \item JetBrains for Students: \url{https://www.jetbrains.com/student/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thank you!}
+\section{Thank you!}
 \end{frame}
 
 \end{document}
