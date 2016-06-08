@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Presentation file for the 9th of June
@@ -20,7 +21,7 @@ public class ShortcutDemo {
 
     /**
      * Demonstration Intent Menu
-     * Smart Join: Control+Shift+J
+     * Join lines: Control+Shift+J
      * Clipboard:
      */
     public String getLongDescription() {
@@ -34,10 +35,20 @@ public class ShortcutDemo {
      * Code completion: Enter vs Tab
      * Documentation view: Control+Q
      */
-
     public boolean contains(String first, String second) {
         //obviously incorrect:
         return first.equals(second);
+    }
+
+    /**
+     * More advanced code completions:
+     * Smart complete: Control+Shift+Space
+     * Finish line: Control+Shift+Enter
+     */
+    public String replaceWithCapsWithDisplayLocale(String in, String find) {
+        //return in.replaceAll(in, in.toUpperCase(Locale.getDefault(Locale.Category.DISPLAY)));
+        return in.replaceAll(find, find.toUpperCase(Locale.getDefault(Locale.Category.DISPLAY)));
+        //return null;
     }
 
     /**
@@ -64,7 +75,7 @@ public class ShortcutDemo {
      * Navigation && Bookmarks
      * Navigate file: Control+F12
      */
-    public void bookmark() {
+    public void navigationBookmark() {
 
     }
 
@@ -94,7 +105,7 @@ public class ShortcutDemo {
 
     /**
      * Code templates
-     * Command+J: list available templates
+     * List available templates: Control+J
      */
     public void forNumber() {
         List<Integer> in = new ArrayList<>();
