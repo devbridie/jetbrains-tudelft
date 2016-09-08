@@ -1,0 +1,75 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{hyperref}
+
+
+\usepackage{eso-pic}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.75\paperwidth},\LenToUnit{0.1\paperheight}){#1}}}
+\AddToShipoutPictureFG{
+  \AtPagemyUpperLeft{
+  \includegraphics[width=2.5cm,keepaspectratio]{jetbrains_250x250}}
+}
+
+
+\title{YouTrack: Issue tracker designed for development teams}
+\author{Dereck Bridi\'e}
+\date{draft}
+
+\usetheme{Szeged}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Questions}
+\section{Questions}
+\begin{itemize}
+    \item JetBrains?
+    \item YouTrack?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{YouTrack}
+\section{YouTrack}
+\begin{itemize}
+    \item Issue tracking
+    \item Reporting \& Analysis
+	\item Scrum
+	\item Time management
+	\item \textbf{IDE Integration!}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Quick notes}
+\section{Quick notes}
+\begin{itemize}
+    \item Please interrupt me if you have any questions
+\end{itemize}
+\end{frame}
+
+\begin{frame}{To the code!}
+\section{To YouTrack!}
+\end{frame}
+
+\begin{frame}{Ending}
+\section{Ending}
+\begin{itemize}
+    \item Next session in a few weeks
+    \item Topic suggestions are welcomed!
+    \item Find this project on Github: \url{https://github.com/devbridie/jetbrains-tudelft}
+    \item JetBrains for Students: \url{https://www.jetbrains.com/student/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thank you!}
+\section{Thank you for listening!}
+\end{frame}
+
+\end{document}
