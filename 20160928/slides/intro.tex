@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{hyperref}
+\usepackage{eso-pic}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.75\paperwidth},\LenToUnit{0.1\paperheight}){#1}}}
+\AddToShipoutPictureFG{
+  \AtPagemyUpperLeft{{\includegraphics[width=2.5cm,keepaspectratio]{jetbrains_250x250}}}
+}%
+
+
+\title{Introduction to Kotlin}
+\author{Dereck Bridi\'e}
+\date{28 September 2016}
+
+\usetheme{Szeged}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{About me}
+\begin{frame}{About me}
+\begin{itemize}
+    \item Campus Ambassador for JetBrains
+\end{itemize}
+\end{frame}
+
+\section{Questions}
+\begin{frame}{Questions}
+\begin{itemize}
+    \item Eclipse users?
+    \item IntelliJ users?
+    \pause
+    \item Heard of Kotlin before?
+    \item Already using Kotlin?
+\end{itemize}
+\end{frame}
+
+\section{Content}
+\begin{frame}{Content}
+\begin{itemize}
+    \item Brief history
+    \item Quick syntax overview
+    \item Focused on \textbf{practical} applications
+    \item Avoid thinking about meaningless details
+\end{itemize}
+\end{frame}
+
+\section{Quick notes}
+\begin{frame}{Quick notes}
+\begin{itemize}
+    \item Please interrupt me if you have any questions
+\end{itemize}
+\end{frame}
+
+\section{History}
+
+\begin{frame}{History}
+\begin{itemize}
+    \item JetBrains wanted a new language with many goals in mind
+    \pause
+    \item July 2011: Unveiling
+    \item Feburary 2012: First public snapshots
+    \item October 2015: Beta Candidate
+    \item Feburary 2016: Kotlin 1.0!
+    \item Now? \pause Kotlin 1.0.4 + 1.1EAP
+\end{itemize}
+\end{frame}
+
+\section{Why Kotlin?}
+
+\begin{frame}{Why Kotlin?}
+\begin{itemize}
+    \item Concise \pause
+    \item Safe \pause
+    \item Java Interop \pause
+    \item Tooling
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{To the code!}
+\section{To the code!}
+\end{frame}
+
+\begin{frame}{Ending}
+\section{Ending}
+\begin{itemize}
+    \item Next session in a month
+    \item Topic suggestions welcomed!
+    \item Find this demo on Github: \url{https://github.com/devbridie/jetbrains-tudelft}
+    \item JetBrains for Students: \url{https://www.jetbrains.com/student/}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thank you!}
+\section{Thank you!}
+\end{frame}
+
+\end{document}
