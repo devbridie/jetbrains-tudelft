@@ -1,0 +1,3 @@
+fun example(s: String) {
+
+}
