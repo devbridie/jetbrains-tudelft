@@ -1,0 +1,148 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+
+\usepackage{eso-pic}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+
+\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.75\paperwidth},\LenToUnit{0.1\paperheight}){#1}}}
+\AddToShipoutPictureFG{
+  \AtPagemyUpperLeft{{\includegraphics[width=2.5cm,keepaspectratio]{jetbrains_250x250}}}
+}%
+
+
+\title{Refactoring Java Programs with IntelliJ IDEA}
+\author{Dereck Bridi\'e}
+\date{2nd of March 2017}
+
+\usetheme{Szeged}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{Questions}
+\begin{frame}{Questions}
+\begin{itemize}
+    \item Java programmers:
+    \item IntelliJ or Eclipse?
+\end{itemize}
+\end{frame}
+
+\section{Content}
+\begin{frame}{Content}
+\begin{itemize}
+    \item Refactoring Java Programs
+    \item Quickly improve code quality by solving code smells
+    \item Small examples to show possibilities
+    \item Let IntelliJ IDEA think about the difficult changes \pause
+    \item Build confidence in IntelliJ IDEA's changes
+\end{itemize}
+\end{frame}
+
+\section{Quick notes}
+\begin{frame}{Quick notes}
+\begin{itemize}
+    \item Please interrupt me if you have any questions
+\end{itemize}
+\end{frame}
+
+\section{IntelliJ features}
+\begin{frame}{IntelliJ features}
+\begin{itemize}
+	\item Out-of-the-box support for many languages
+	\item Framework specific refactorings
+	\item Over 40 different kinds of refactoring for Java alone!
+	\item Smart detection of references and duplicates	
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A short taste... (Java)}
+\begin{multicols}{3}
+\begin{itemize}
+	\item Rename (File)...
+	\item Change Signature
+	\item Type Migration
+	\item Make Static
+	\item Convert to Instance Method
+	\item Move
+	\item Copy
+	\item Safe Delete
+	\item Extract
+	\item Inline
+	\item Find and Replace Duplicates
+	\item Invert Boolean
+	\item Pull Members Up
+	\item Push Members Down
+	\item ...
+	\item 
+	\item 
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{A short taste... (Java)}
+\begin{multicols}{3}
+\begin{itemize}
+	\item Use Interface Where Possible
+	\item Replace Inheritance with Delegation
+	\item Remove middleman
+	\item Wrap Method Return Value
+	\item Convert Anonymous to Inner
+	\item Encapsulate Fields
+	\item Replace Temp with Query
+	\item Replace Constructor with Factory Method
+	\item Replace Constructor with Builder 
+	\item Generify
+	\item Migrate
+	\item 
+	\item 
+	\item 
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\section{Today}
+\begin{frame}{Today}
+\begin{itemize}
+\item Change Method Signature
+\item Convert Anonymous Class to Inner Class
+\item Encapsulate Fields
+\item Extract Delegate
+\item Replace Constructor with Builder/Factory Method
+\item Extract Parameter
+\item Push/Pull members
+\item Remove middleman
+\end{itemize}
+\end{frame}
+
+\section{To the code!}
+
+\begin{frame}{To the code!}
+
+\end{frame}
+
+\section{Ending}
+
+\begin{frame}{Ending}
+
+\begin{itemize}
+    \item Next session in a few weeks
+    \item Topic suggestions welcomed!
+    \item JetBrains for Students: \url{https://www.jetbrains.com/student/}
+\end{itemize}
+\end{frame}
+
+\section{Thank you!}
+\begin{frame}{Thank you!}
+
+\end{frame}
+
+\end{document}
